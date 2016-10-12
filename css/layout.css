@@ -115,8 +115,40 @@ h3 {
 }
 
 .content .item {
-  padding: 10px 0px 10px 48px;
-  background: url('../img/vertical_line_pattern.png') repeat-y 16px;
+  display: block;
+  float: left;
+  clear: both;
+  padding-bottom: 10px;
+  background: url('../img/time_line_pattern.png') repeat-y 16px;
+}
+
+.content .item:first-child {
+  padding-top: 10px;
+}
+
+.content .item .timespot {
+  width: 160px;
+  padding-left: 48px;
+  padding-bottom: 10px;
+  float: left;
+  background: url(../img/timespot_bullet.png) no-repeat 7px 0px;
+  background-size: 20px;
+  font-size: 11pt;
+}
+
+.content .item:last-child {
+  background: #ffffff;
+}
+
+.content .item .description {
+  max-width: 500px;
+  float: left;
+  padding-left: 20px;
+  font-size: 10pt;
+}
+
+.content .item .description span {
+  display: block;
 }
 
 @media (max-width: 600px) {
