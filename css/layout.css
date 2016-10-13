@@ -120,6 +120,8 @@ h3 {
   clear: both;
   padding-bottom: 10px;
   background: url('../img/time_line_pattern.png') repeat-y 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10pt;
 }
 
 .content .item:first-child {
@@ -127,28 +129,36 @@ h3 {
 }
 
 .content .item .timespot {
-  width: 160px;
-  padding-left: 48px;
-  padding-bottom: 10px;
+  width: 140px;
+  padding: 2px 0px 10px 48px;
   float: left;
   background: url(../img/timespot_bullet.png) no-repeat 7px 0px;
   background-size: 20px;
-  font-size: 11pt;
 }
 
 .content .item:last-child {
   background: #ffffff;
 }
 
-.content .item .description {
+.content .item .info {
   max-width: 500px;
   float: left;
-  padding-left: 20px;
-  font-size: 10pt;
+  padding-left: 10px;
+  padding-top: 2px;
 }
 
-.content .item .description span {
+.content .item .info span {
   display: block;
+  text-align: justify;
+}
+
+.content .item .info .company {
+  font-weight: bold;
+}
+
+.content .item .info .position {
+  padding-bottom: 5px;
+  font-style: italic;
 }
 
 @media (max-width: 600px) {
