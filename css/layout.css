@@ -162,6 +162,38 @@ h3 {
   font-style: italic;
 }
 
+.content .skills-list {
+  padding-left: 48px;
+  display: inline-block;
+  background: url('../img/time_line_pattern.png') repeat-y 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10pt;
+}
+
+.content .skill {
+  float: left;
+  clear: both;
+  display: inline-block;
+  padding: 2px 0px;
+}
+
+.content .skill .bar {
+  width: 200px;
+  height: 8px;
+  margin-top: 6px;
+  margin-left: 120px;
+  background: #cccccc;
+}
+
+.content .skill .skill-title {
+  float: left;
+}
+
+.content .skill .score {
+  height: 8px;
+  background: #6a6a6a;
+}
+
 @media (max-width: 600px) {
   #info {
     width: 100%;
