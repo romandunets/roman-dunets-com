@@ -4,6 +4,10 @@ html, body, #page {
   margin: 0;
 }
 
+body {
+  display: table;
+}
+
 h3 {
   font-weight: normal;
   margin-bottom: 0px;
@@ -20,7 +24,7 @@ h3 {
 
 .sidebar {
   width: 220px;
-  padding: 25px 0px 0px 25px;
+  padding: 25px 0px 25px 25px;
   background-color: #2d2d2d;
   color: #cccccc;
 }
@@ -168,6 +172,15 @@ h3 {
   background: url('../img/time_line_pattern.png') repeat-y 16px;
   font-family: 'Open Sans', sans-serif;
   font-size: 10pt;
+}
+
+.content .skills-list .column {
+  float: left;
+  padding-right: 20px;
+}
+
+.content .skills-list .column:last-child {
+  padding-right: 0px;
 }
 
 .content .skill {
