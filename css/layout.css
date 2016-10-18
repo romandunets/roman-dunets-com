@@ -80,6 +80,7 @@ h3 {
   border: 2px solid #cccccc;
   border-radius: 70px;
   background: url('../img/photo.jpg') no-repeat center;
+  background-size: 140px;
 }
 
 .content {
