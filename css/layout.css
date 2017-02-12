@@ -102,6 +102,10 @@ h3 {
   font-size: 14pt;
 }
 
+.content .section {
+  display: table;
+}
+
 .content .section hr {
   margin-bottom: 5px;
   border-color: #6d6d6d;
