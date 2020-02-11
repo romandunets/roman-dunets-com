@@ -189,6 +189,7 @@ h4 {
 .content .skills-list {
   display: flex;
   flex-direction: column;
+  padding-top: 10px;
   padding-left: 48px;
   background: url('../img/time_line_pattern.png') repeat-y 16px;
   font-family: 'Open Sans', sans-serif;
