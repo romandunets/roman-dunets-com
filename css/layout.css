@@ -13,11 +13,9 @@ body,
 }
 
 .sidebar {
-  position: fixed;
-  width: 220px;
+  width: 240px;
   height: 100%;
   flex-shrink: 0;
-  padding: 25px 0px 25px 25px;
   background-color: #2d2d2d;
   color: #cccccc;
 }
@@ -25,7 +23,7 @@ body,
 .sidebar .photo {
   width: 140px;
   height: 140px;
-  margin-left: 25px;
+  margin: 25px auto 0px auto;
   border: 2px solid #cccccc;
   border-radius: 70px;
   background: url('../img/photo.jpeg') no-repeat center;
@@ -34,6 +32,7 @@ body,
 
 .sidebar .section {
   margin-bottom: 20px;
+  padding-left: 25px;
 }
 
 .sidebar h4 {
@@ -84,7 +83,6 @@ body,
 }
 
 .content {
-  margin-left: 245px;
   padding: 20px 50px 20px 40px;
   color: #333333;
 }
@@ -190,8 +188,8 @@ body,
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  column-gap: 25px;
   margin-left: 15px;
-  margin-right: -25px;
   padding-top: 10px;
   padding-left: 30px;
   border-left: 2px solid grey;
@@ -202,7 +200,7 @@ body,
 .content .skill {
   display: flex;
   flex-grow: 1;
-  padding: 2px 25px 2px 0px;
+  padding: 2px 0px;
 }
 
 .content .skill .bar {
@@ -225,7 +223,7 @@ body,
 
 @media screen and (max-width: 800px) {
   .content {
-    padding: 20px;
+    padding: 20px 30px 20px 20px;
   }
 
   .content .header {
@@ -238,5 +236,71 @@ body,
 
   .content .item .info {
     padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #page {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .sidebar .header {
+    text-align: center;
+    margin: 20px;
+  }
+
+  .sidebar .header h1 {
+    margin-bottom: 5px;
+    font-size: 24pt;
+  }
+
+  .sidebar .header span {
+    margin-bottom: 0px;
+    font-size: 12pt;
+  }
+
+  .sidebar .photo {
+    width: 200px;
+    height: 200px;
+    background-size: 200px;
+    border-radius: 100px;
+  }
+
+  .sidebar .section .item-content {
+    display: flex;
+  }
+
+  .sidebar .section .item-content h4 {
+    width: 75px;
+  }
+
+  .sidebar .section .item img {
+    width: 16px;
+    height: 16px;
+    margin-top: 0px;
+  }
+
+  .sidebar .section span {
+    font-size: 10pt;
+  }
+
+  .content {
+    margin-left: 0px;
+  }
+
+  .desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .mobile {
+    display: none;
   }
 }
