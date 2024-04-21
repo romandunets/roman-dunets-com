@@ -201,6 +201,8 @@ body,
   display: flex;
   flex-grow: 1;
   padding: 2px 0px;
+  min-width: 30%;
+  max-width: 300px;
 }
 
 .content .skill .bar {
