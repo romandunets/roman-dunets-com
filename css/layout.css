@@ -155,7 +155,7 @@ body,
 .content .item .period {
   display: flex;
   flex-shrink: 0;
-  width: 180px;
+  width: 120px;
 }
 
 .content .item .period span {
