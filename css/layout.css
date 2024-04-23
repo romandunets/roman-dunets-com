@@ -187,22 +187,22 @@ body,
 .content .skills-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  column-gap: 25px;
+  justify-content: flex-start;
+  column-gap: 10px;
+  row-gap: 10px;
   margin-left: 15px;
   padding-top: 10px;
   padding-left: 30px;
+  margin-bottom: 15px;
   border-left: 2px solid grey;
   font-family: 'Open Sans', sans-serif;
   font-size: 10pt;
 }
 
 .content .skill {
-  display: flex;
-  flex-grow: 1;
-  padding: 2px 0px;
-  min-width: 30%;
-  max-width: 300px;
+  border: 1px solid #8a8a8a;
+  border-radius: 10px;
+  padding: 6px;
 }
 
 .content .skill .bar {
